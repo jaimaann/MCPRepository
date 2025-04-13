@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "MCPRepository.net - A professional repository",
   "dependencies": {
+    "@next/third-parties": "^15.3.0",
     "eslint-config-next": "^15.3.0",
     "framer-motion": "^12.6.5",
     "next": "^15.3.0",

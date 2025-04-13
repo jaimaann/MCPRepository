@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import GoogleAnalyticsScript from '../components/GoogleAnalytics';
 import './globals.css';
 
 const poppins = Poppins({ 
@@ -65,6 +66,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Get Google Analytics ID from environment variables
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || '';
+  
   return (
     <html lang="en">
       <body className={poppins.className}>
@@ -75,6 +79,8 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        {/* Add Google Analytics */}
+        <GoogleAnalyticsScript gaId={gaId} />
       </body>
     </html>
   );
