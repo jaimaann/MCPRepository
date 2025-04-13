@@ -247,8 +247,8 @@ export default function About() {
             Together, we're advancing the capabilities of AI assistants and enhancing how they interact with external tools and data.
           </p>
           <div className="btn-container">
-            <Link 
-              href="/contact" 
+            <a 
+              href="mailto:info@mcprepository.net" 
               className="btn" 
               style={{ 
                 marginRight: '1rem',
@@ -258,7 +258,9 @@ export default function About() {
                 padding: '0.85rem 2rem',
                 borderRadius: '50px',
                 boxShadow: '0 4px 14px rgba(0, 0, 0, 0.1)',
-                transition: 'all 0.3s ease'
+                transition: 'all 0.3s ease',
+                textDecoration: 'none',
+                display: 'inline-block'
               }}
               onMouseOver={(e) => {
                 e.currentTarget.style.transform = 'translateY(-3px)';
@@ -270,7 +272,7 @@ export default function About() {
               }}
             >
               Contact Us
-            </Link>
+            </a>
             <Link 
               href="/" 
               className="btn" 
