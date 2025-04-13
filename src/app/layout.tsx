@@ -13,10 +13,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://mcprepository.net'),
   title: {
-    default: 'MCPRepository.net - Professional MCP Directory',
+    default: 'Largest ModelContextProtocol Server Repository | MCPRepository.net',
     template: '%s | MCPRepository.net'
   },
-  description: 'Professional directory of MCP servers with curated reviews, ratings, and comprehensive resources. Find reliable MCP solutions for your projects.',
+  description: 'Discover ModelContextProtocol (MCP) Servers with comprehensive reviews and step-by-step installation guides. Find the perfect MCP solution for your AI projects.',
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-icon.png',
@@ -27,21 +27,21 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://mcprepository.net',
     siteName: 'MCPRepository.net',
-    title: 'MCPRepository.net - Professional MCP Directory',
-    description: 'Find reliable MCP servers for your projects with our comprehensive directory and expert reviews.',
+    title: 'Largest ModelContextProtocol Server Repository | MCPRepository.net',
+    description: 'Discover ModelContextProtocol (MCP) Servers with comprehensive reviews and step-by-step installation guides. Find the perfect MCP solution for your AI projects.',
     images: [
       {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'MCPRepository.net - Professional MCP Directory'
+        alt: 'Largest ModelContextProtocol Server Repository | MCPRepository.net'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MCPRepository.net - Professional MCP Directory',
-    description: 'Find reliable MCP servers for your projects with our comprehensive directory and expert reviews.',
+    title: 'Largest ModelContextProtocol Server Repository | MCPRepository.net',
+    description: 'Discover ModelContextProtocol (MCP) Servers with comprehensive reviews and step-by-step installation guides. Find the perfect MCP solution for your AI projects.',
     images: ['/opengraph-image.png']
   },
   alternates: {
