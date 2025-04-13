@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 // Define the type for our card data
@@ -22,10 +22,16 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ data }) => {
+  const [imageError, setImageError] = useState(false);
+  
   const handleCardClick = () => {
     if (data.url) {
       window.open(data.url, '_blank', 'noopener,noreferrer');
     }
+  };
+
+  const handleImageError = () => {
+    setImageError(true);
   };
 
   return (
@@ -34,13 +40,25 @@ const Card: React.FC<CardProps> = ({ data }) => {
       onClick={data.url ? handleCardClick : undefined}
     >
       <div className="card-image-container">
-        <Image 
-          src={data.imgUrl} 
-          alt={data.title}
-          width={400}
-          height={250}
-          className="card-image"
-        />
+        {!imageError ? (
+          <Image 
+            src={data.imgUrl} 
+            alt={data.title}
+            width={400}
+            height={250}
+            className="card-image"
+            priority
+            loading="eager"
+            onError={handleImageError}
+          />
+        ) : (
+          <img
+            src={data.imgUrl}
+            alt={data.title}
+            className="card-image"
+            style={{ width: '100%', height: 'auto', maxHeight: '250px', objectFit: 'cover' }}
+          />
+        )}
       </div>
       <div className="card-content">
         <h3 className="card-title">{data.title}</h3>
