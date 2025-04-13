@@ -78,7 +78,7 @@ export default function About() {
           className="mission-section"
           variants={fadeIn}
         >
-          <h3 className="mb-4" style={{ 
+          <h3 style={{ 
             fontSize: '1.8rem', 
             background: 'linear-gradient(90deg, var(--airbnb-pink), #FF8A80)',
             WebkitBackgroundClip: 'text',
@@ -129,7 +129,7 @@ export default function About() {
         </motion.div>
         
         <motion.div variants={fadeIn} className="services-section">
-          <h3 className="mb-4" style={{ 
+          <h3 style={{ 
             fontSize: '1.8rem',
             background: 'linear-gradient(90deg, #0070f3, #00c8ff)',
             WebkitBackgroundClip: 'text',
@@ -163,7 +163,7 @@ export default function About() {
             margin: '3rem 0'
           }}
         >
-          <h3 className="mb-4" style={{ 
+          <h3 style={{ 
             fontSize: '1.8rem',
             color: '#222222'
           }}>
@@ -194,7 +194,7 @@ export default function About() {
         </motion.div>
         
         <motion.div variants={fadeIn}>
-          <h3 className="mb-4" style={{ 
+          <h3 style={{ 
             fontSize: '1.8rem',
             background: 'linear-gradient(90deg, #6B46C1, #9F7AEA)',
             WebkitBackgroundClip: 'text',
@@ -228,10 +228,11 @@ export default function About() {
             boxShadow: '0 15px 35px rgba(255, 90, 95, 0.2), 0 5px 15px rgba(0, 0, 0, 0.05)'
           }}
         >
-          <h3 className="mb-4" style={{ 
+          <h3 style={{ 
             fontSize: '2rem',
             color: 'white',
-            fontWeight: 700
+            fontWeight: 700,
+            marginBottom: '1rem'
           }}>
             Join the MCP Community
           </h3>
@@ -302,14 +303,14 @@ export default function About() {
           variants={fadeIn}
           style={{
             display: 'flex',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
             flexWrap: 'wrap',
             gap: '1.5rem',
             margin: '4rem 0 2rem'
           }}
         >
           <div className="stat-box" style={{
-            flex: '1 0 250px',
+            flex: '1 1 350px',
             padding: '1.5rem',
             backgroundColor: 'white',
             borderRadius: '12px',
@@ -329,7 +330,7 @@ export default function About() {
           </div>
           
           <div className="stat-box" style={{
-            flex: '1 0 250px',
+            flex: '1 1 350px',
             padding: '1.5rem',
             backgroundColor: 'white',
             borderRadius: '12px',
@@ -348,25 +349,7 @@ export default function About() {
             <p style={{ color: '#717171', fontSize: '1.1rem' }}>Monthly Users</p>
           </div>
           
-          <div className="stat-box" style={{
-            flex: '1 0 250px',
-            padding: '1.5rem',
-            backgroundColor: 'white',
-            borderRadius: '12px',
-            textAlign: 'center',
-            boxShadow: '0 5px 15px rgba(0, 0, 0, 0.05)',
-            transition: 'all 0.3s ease'
-          }}>
-            <h4 style={{
-              fontSize: '2.5rem',
-              fontWeight: 700,
-              color: '#6B46C1',
-              marginBottom: '0.5rem'
-            }}>
-              98%
-            </h4>
-            <p style={{ color: '#717171', fontSize: '1.1rem' }}>Customer Satisfaction</p>
-          </div>
+
         </motion.div>
       </motion.div>
       
@@ -397,12 +380,13 @@ export default function About() {
         /* Add a subtle animation to section headings */
         h3 {
           position: relative;
+          margin-bottom: 25px; /* Increased margin to make room for the line */
         }
         
         h3::after {
           content: '';
           position: absolute;
-          bottom: -10px;
+          bottom: -15px; /* Pushed further down to avoid overlapping */
           left: 0;
           width: 60px;
           height: 3px;

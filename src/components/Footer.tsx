@@ -4,83 +4,31 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="footer">
+    <footer className="footer" style={{ padding: '1.5rem 0', backgroundColor: '#f7f7f7', borderTop: '1px solid #ebebeb' }}>
       <div className="container">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3>Support</h3>
-            <ul>
+        <div className="footer-content" style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginBottom: '1rem' }}>
+          <div>
+            <ul style={{ display: 'flex', gap: '1.5rem', listStyle: 'none', flexWrap: 'wrap', justifyContent: 'center' }}>
               <li>
-                <Link href="/help-center">Help Center</Link>
+                <Link href="/about" style={{ fontSize: '0.9rem', color: '#717171' }}>About Us</Link>
               </li>
               <li>
-                <Link href="/documentation">Documentation</Link>
+                <Link href="/terms" style={{ fontSize: '0.9rem', color: '#717171' }}>Terms of Service</Link>
               </li>
               <li>
-                <Link href="/faq">FAQs</Link>
+                <Link href="/privacy" style={{ fontSize: '0.9rem', color: '#717171' }}>Privacy Policy</Link>
               </li>
               <li>
-                <Link href="/api-support">API Support</Link>
-              </li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
-            <h3>Discover</h3>
-            <ul>
-              <li>
-                <Link href="/tutorials">Tutorials</Link>
+                <Link href="/sitemap" style={{ fontSize: '0.9rem', color: '#717171' }}>Sitemap</Link>
               </li>
               <li>
-                <Link href="/resources">Resources</Link>
-              </li>
-              <li>
-                <Link href="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link href="/community">Community</Link>
-              </li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
-            <h3>MCPRepository</h3>
-            <ul>
-              <li>
-                <Link href="/about">About Us</Link>
-              </li>
-              <li>
-                <Link href="/careers">Careers</Link>
-              </li>
-              <li>
-                <Link href="/press">Press</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
-            <h3>Legal</h3>
-            <ul>
-              <li>
-                <Link href="/terms">Terms of Service</Link>
-              </li>
-              <li>
-                <Link href="/privacy">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link href="/cookies">Cookie Policy</Link>
-              </li>
-              <li>
-                <Link href="/sitemap">Sitemap</Link>
+                <Link href="/contact" style={{ fontSize: '0.9rem', color: '#717171' }}>Contact</Link>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="footer-bottom">
+        <div className="footer-bottom" style={{ textAlign: 'center', fontSize: '0.8rem', color: '#888' }}>
           <p>© {currentYear} MCPRepository.net, Inc. All rights reserved.</p>
         </div>
       </div>
