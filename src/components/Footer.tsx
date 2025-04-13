@@ -22,7 +22,7 @@ export default function Footer() {
                 <Link href="/sitemap" style={{ fontSize: '0.9rem', color: '#717171' }}>Sitemap</Link>
               </li>
               <li>
-                <Link href="/contact" style={{ fontSize: '0.9rem', color: '#717171' }}>Contact</Link>
+                <a href="mailto:info@mcprepository.net" style={{ fontSize: '0.9rem', color: '#717171' }}>Contact</a>
               </li>
             </ul>
           </div>
@@ -30,6 +30,9 @@ export default function Footer() {
         
         <div className="footer-bottom" style={{ textAlign: 'center', fontSize: '0.8rem', color: '#888' }}>
           <p>© {currentYear} MCPRepository.net, Inc. All rights reserved.</p>
+          <p style={{ marginTop: '0.5rem' }}>
+            <a href="mailto:info@mcprepository.net" style={{ color: '#717171' }}>info@mcprepository.net</a>
+          </p>
         </div>
       </div>
     </footer>

@@ -20,9 +20,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="nav-link">
+              <a href="mailto:info@mcprepository.net" className="nav-link">
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
