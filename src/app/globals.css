@@ -3,7 +3,7 @@
   --background-rgb: 255, 255, 255;
   --primary-color: #0070f3;
   --secondary-color: #1a202c;
-  --airbnb-pink: #FF5A5F;
+  --airbnb-pink: #85144B;
   --airbnb-grey: #484848;
 }
 
@@ -395,7 +395,7 @@ a {
 }
 
 .btn-primary:hover {
-  background-color: #FF3B41;
+  background-color: #6A1039;
 }
 
 .btn-outline {
