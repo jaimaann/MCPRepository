@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com'],
   },
+  // Important for Netlify deployments
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
