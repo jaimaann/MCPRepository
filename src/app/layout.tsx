@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://mcprepository.net',
     siteName: 'MCPRepository.net',
-    title: 'Largest ModelContextProtocol Server Repository | MCPRepository.net',
+    title: 'Search MCP Server | ModelContextProtocol | MCPRepository.net',
     description: 'Discover ModelContextProtocol (MCP) Servers with comprehensive reviews and step-by-step installation guides. Find the perfect MCP solution for your AI projects.',
     images: [
       {
