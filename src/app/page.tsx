@@ -10,7 +10,7 @@ import type { CardData } from '@/components/Card';
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 6; // Show 6 cards per page
+  const cardsPerPage = 12; // Increased from 6 to 12 cards per page since we have optimized the cards
   
   const filteredCards = useMemo(() => {
     if (!searchQuery.trim()) {

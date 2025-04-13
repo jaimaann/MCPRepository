@@ -39,30 +39,43 @@ const Card: React.FC<CardProps> = ({ data }) => {
       className={`card ${data.url ? 'card-clickable' : ''}`} 
       onClick={data.url ? handleCardClick : undefined}
     >
-      <div className="card-image-container">
+      <div className="card-image-container" style={{ height: '150px', overflow: 'hidden' }}>
         {!imageError ? (
           <Image 
             src={data.imgUrl} 
             alt={data.title}
-            width={400}
-            height={250}
+            width={200}
+            height={150}
             className="card-image"
-            priority
-            loading="eager"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
             onError={handleImageError}
+            style={{ objectFit: 'cover' }}
           />
         ) : (
-          <img
-            src={data.imgUrl}
-            alt={data.title}
-            className="card-image"
-            style={{ width: '100%', height: 'auto', maxHeight: '250px', objectFit: 'cover' }}
-          />
+          <div
+            className="card-image-fallback"
+            style={{ 
+              width: '100%', 
+              height: '150px', 
+              backgroundColor: '#f0f0f0',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#888',
+              fontSize: '14px'
+            }}
+          >
+            Image unavailable
+          </div>
         )}
       </div>
       <div className="card-content">
         <h3 className="card-title">{data.title}</h3>
-        <p className="card-description">{data.description}</p>
+        <p className="card-description" style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
+          {data.description.length > 100 ? `${data.description.substring(0, 100)}...` : data.description}
+        </p>
         <div className="card-tags">
           {data.tags.map((tag, index) => (
             <span key={index} className="card-tag">
