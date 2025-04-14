@@ -127,6 +127,7 @@ MCPRepository/
 Our vision for MCPRepository includes:
 
 ### Short-term Goals (Next 3 months)
+- [ ] Presently, MCP Server data is static, implement backend server
 - [ ] Implement ratings and comments section for MCP Servers
 - [ ] Create user profiles, siging and signup
 - [ ] Implement category
