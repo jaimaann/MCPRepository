@@ -94,6 +94,27 @@ a {
   color: var(--airbnb-pink);
 }
 
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background-color: #24292e;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.github-link:hover {
+  background-color: #1b1f23;
+  color: white;
+}
+
+.github-icon {
+  width: 18px;
+  height: 18px;
+}
+
 /* Search Styles */
 .search-container {
   max-width: 600px;
@@ -455,5 +476,13 @@ a {
   .pagination-number {
     width: 2rem;
     height: 2rem;
+  }
+  
+  .github-link span {
+    display: none;
+  }
+  
+  .github-icon {
+    margin: 0;
   }
 }
