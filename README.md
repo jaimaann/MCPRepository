@@ -1,4 +1,4 @@
-# MCPRepository
+# [MCPRepository](https://mcprepository.net/)
 
 <p align="center">
   <img src="public/icons/icon-192X192.png" alt="MCPRepository Logo" width="200"/>
