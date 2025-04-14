@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "MCPRepository.net - A professional repository",
   "dependencies": {
     "@next/third-parties": "^15.3.0",
