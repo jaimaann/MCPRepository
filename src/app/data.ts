@@ -24,6 +24,7 @@ const getImageForServer = (name: string, description: string): string => {
     'Sequential Thinking': '/images/thinking.jpg',
     'Slack': '/images/slack.jpg',
     'Sqlite': '/images/database.jpg',
+    'BuyWhere': '/images/default.jpg',
     'Time': '/images/time.jpg',
   };
 
@@ -761,6 +762,11 @@ const serverData = [
     "name": "browser-use",
     "description": "(by co-browser) - browser-use MCP server with dockerized playwright + chromium + vnc. supports stdio & resumable http. ",
     "url": "https://github.com/co-browser/browser-use-mcp-server"
+  },
+  {
+    "name": "BuyWhere",
+    "description": "MCP server for product search and comparison across Singapore, SEA, and US markets — search 1.5M+ products from Shopee, Lazada, Amazon, Walmart, and more. ",
+    "url": "https://github.com/BuyWhere/buywhere-mcp"
   },
   {
     "name": "Bsc-mcp",
